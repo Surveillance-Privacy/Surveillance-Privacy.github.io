@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!--
+	Binary by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Proposed Solution for Catching Phising</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo"><strong>CS 858 / SOC 701:</strong> Surveillance and Privacy</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="plagerism.html">Plagerism</a></li>
+					<li><a href="phishing.html">Phishing</a></li>
+					<li><a href="illegal_inappropriate.html">Illegal and Inappropriate Content</a></li>
+				</ul>
+			</nav>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+					<header>
+						<h1>Proposed Solution for Catching Phising</h1>
+						<p class="info">Written: November 2020</p>
+					</header>
+					<p>Phishing is a type of spam in which the message sender pretends to be a legitimate user in order to trick a user into handing over their personal information by asking them to complete some action such as verification of a password, verification or updation of sensitive information, etc. There is a need to prevent phishing in order to protect user privacy and prevent surveillance. We suggest a technique which avoids the use of third party tools. We suggest the use of Google’s Safe Browsing API which keeps a list of phishy urls. Our method is as follows:
+						<ol>
+							<li>Extract URLs from the UGC.</li>
+							<li>Maintain a local database containing phishy urls. The data is obtained from Google’s Safe Browsing API. The database will be periodically updated, so that new changes can be incorporated and the database remains up to date. An advantage of keeping a local database is that data is exchanged infrequently with the google server so the server never knows the actual URLs which are queried. Whereas if you use the live API, then the google server will know what urls you are checking.</li>
+							<li>A tools will have to be created which checks each url extracted from the user posts against the local database of phishy urls. If the url is phishy, it will be removed and appropriate action will be taken against the user who posted it.</li>
+						</ol>
+					</p>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<div class="copyright">
+					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
