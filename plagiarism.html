@@ -38,20 +38,24 @@
 						<h1>Proposed Solution for Catching Plagiarism</h1>
 						<p class="info">Written: November 2020</p>
 					</header>
-						<div class="image fit">
+					<p>Plagiarism is defined as "the act or an instance of the use or close imitation of the language and thoughts of another author without authorization and presenting the work of the author as his”. Turnitin is the most widely used tool used to detect pliagarism. However, it has drastic implications on surveillance and privacy. Turnitin acknowledges that the submitted personal information may be shared, particularly IP addresses, device IDs or other online identifiers with third parties, including social and advertising networks. Student submissions are a kind of personal data which means online learning platforms that use Turnitin for pliagarism detection are putting student privacy at risk by submitting their work to a database without student consent. A student’s particular writing style, for example, can be used to personally identify an individual. Also, many times students include personally identifiable information (PII) like student ID, email, etc. in their submissions which could make the task of identifying them easy and straightforward. Considering these problems, we have proposed a solution as shown below which involves a person (the Anonymizer) who modifies students' posts before submitting it to Turnitin.</p>
+					<div class="image fit">
 							<img src="images/plagiarism_sol.png" alt="" />
 						</div>
-					<hr>
+					<p>Our proposed method consists of the following steps:
+						<ol>
+							<li>Publishing the post: When a student writes and submits a post, it will be directly published on the platform. Content could then be flagged through  crowdsourcing, which involves participation of other students/teachers using the platform. Then, the anonymizer may take some time to modify the flagged or selected post and check it with Turnitin for any copied content.</li>
+							<li>Anonymizer: After the publishing the post, it will be checked by the human anonymizer who will modify it appropriately to make sure that student’s PII is not exposed. Then, they will divide the entire post into different sections containing one to three sentences per section. By submitting portions of a post, plagiarism can still be detected and it becomes more difficult for Turnitin to combine all each submissions which belong to a single student based on their writing style. Furthermore, a single administrator account can be given this task to submit all the submissions on students behalf. As such, student privacy will not be at risk.</li>
+							<li>Keeping or removing a post: After checking it with Turnitin, the anonymizer can remove the post from the platform if it is found to be plagiarised. Otherwise, it is kept on the platform.</li>
+						</ol>
+					</p>
 					<div class="image fit">
 							<img src="images/plagiarism_sol_p2.png" alt="" />
 						</div>
-					<hr>
-					<p>Plagiarism is defined as "the act or an instance of the use or close imitation of the language and thoughts of another author without authorization and presenting the work of the author as his”. Turnitin is the most famous tool used to detect pliagarism. But, it have drastic implications on surveillance and privacy. Turnitin acknowledges that the submitted personal information may be shared, particularly IP addresses, device IDs or other online identifiers with third parties, including social and advertising networks. Student submissions are a kind of personal data which means online learning platforms that employ turnitin for pliagarism prevention are putting student privacy at risk by submitting their work to a database without student consent (reference). A student’s particular writing style, for example, can be used to personally identify an individual. Also, many times students include Personally Identifiable Information (PII) like student ID, email, etc. in their submissions which could make the task of identifying them easy and straightforward. Considering these problems, we have proposed a solution as shown above which involves a person(called anonymizer) who will modify student post before submitting it to Turnitin.</p>
-					<p>Our proposed method consists of the following steps:
+					<p>The diagram below illustrates an example of two modifications done by the anonymizer before submitting a post to Turnitin:
 						<ol>
-							<li>Publishing the post : When a student writes and submits a post, it will be directly published on the platform. There are 2 reasons to do it this way. The first one is crowdsourcing which involves participation of other students/teachers using the platform who can flag the post as plagiarised. The second reason is that anonymizer may take some time to modify the post and check it with Turnitin for any copied content.</li>
-							<li>Anonymizer : After the publishing the post, it will be check a human(called anonymizer) who will modify it appropriately to make sure that student’s PII is not exposed. It involves 2 things. Firstly, he will remove all the student identifiers from the post. Secondly, he will divide the entire post into different sections containing 2-3 sentences. In this way, plagiarism can also be checked and it is difficult for Turnitin to combine all the submissions which belong to a single student based on his writing style. To take it to the next level, a single administrator account can be given this task to submit all the submissions on students behalf. As such, student privacy will not be at risk.</li>
-							<li>Keep/remove the post : After checking it with Turnitin, anonymizer can remove the post from the platform if it is found to be plagiarised. Otherwise, it is kept on the platform.</li>
+							<li>Removing Student PII: The student, Tom, has mentioned that he is a thesis based masters student. He has also included his thesis title, name and email address in the post. This information can easily used to identify the writer of the post. Therefore, the anonymizer will remove the corresponding sentences and identifiers from the post.</li>
+							<li>Dividing single post into multiple sections: After removing identifiers, the rest of the post has been divided into multiple sections where each section contains one to three sentences.</li>
 						</ol>
 					</p>
 				</div>

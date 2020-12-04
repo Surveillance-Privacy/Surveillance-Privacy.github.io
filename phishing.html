@@ -38,15 +38,16 @@
 						<h1>Proposed Solution for Catching Phishing</h1>
 						<p class="info">Written: November 2020</p>
 					</header>
-						<div class="image fit">
+					<p>Phishing is a type of spam where the message sender pretends to be a trustworthy or legitimate user in order to trick other users into handing over their personal information by asking them to complete some action such as password verification, or updating other PII.
+					</p>
+					<div class="image fit">
 							<img src="images/phishing_sol.png" alt="" />
 						</div>
-					<hr>
-					<p>Phishing is a type of spam in which the message sender pretends to be a legitimate user in order to trick a user into handing over their personal information by asking them to complete some action such as verification of a password, verification or updation of sensitive information, etc. There is a need to prevent phishing in order to protect user privacy and prevent surveillance. We suggest a technique which avoids the use of third party tools. We suggest the use of Google’s Safe Browsing API which keeps a list of phishy urls. Our method is as follows:
+					<p>We suggest using Google’s Safe Browsing API which keeps a list of phishing URLs. This solution does not required the online education platform to share any personally identifiable information with Google. Our illustrated above, is as follows:
 						<ol>
-							<li>Extract URLs from the UGC.</li>
-							<li>Maintain a local database containing phishy urls. The data is obtained from Google’s Safe Browsing API. The database will be periodically updated, so that new changes can be incorporated and the database remains up to date. An advantage of keeping a local database is that data is exchanged infrequently with the google server so the server never knows the actual URLs which are queried. Whereas if you use the live API, then the google server will know what urls you are checking.</li>
-							<li>A tools will have to be created which checks each url extracted from the user posts against the local database of phishy urls. If the url is phishy, it will be removed and appropriate action will be taken against the user who posted it.</li>
+							<li>First the online education platform extracts URLs from the user generated content.</li>
+							<li>Then the platform providers maintain a local database containing URLs to phishing sites. The URL list is obtained from Google’s Safe Browsing API. The database will be periodically updated, so that new changes can be incorporated and the database remains up to date. An advantage of keeping a local database is that data is exchanged infrequently with the Google server so the server never knows the actual URLs which are being queried. Whereas if you use the live API, then Google’s server will know which URLs you are checking.</li>
+							<li>A tool will have to be specifically designed for the intended platform, which will check each URL extracted from the user posts against the local database of phishing URLs. If the URL is a phishing one, it will be removed and appropriate action can be taken against the user who posted it.</li>
 						</ol>
 					</p>
 				</div>
